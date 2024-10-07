@@ -1,0 +1,22 @@
+{
+    "name": "e2e",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "test:bdd": "cucumber-js",
+        "test:e2e": "playwright test"
+    },
+    "dependencies": {
+        "@playwright/test": "^1.47.2",
+        "playwright": "^1.47.2"
+    },
+    "devDependencies": {
+        "@cucumber/cucumber": "^11.0.1",
+        "@types/node": "^20",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.11",
+        "prettier": "^3.3.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5"
+    }      
+}

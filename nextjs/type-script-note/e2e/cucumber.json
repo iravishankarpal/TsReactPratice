@@ -1,0 +1,19 @@
+{
+    "defaults": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "features/**/*.features"
+        ],
+        "require": [
+            "features/steps/**/*steps.ts"
+        ],
+        "publishQuery": false,
+        "dryRun": false,
+        "publish": false
+    },
+    "require": ["features/**/*.steps.js"],
+    "format": ["progress"]
+  }
+  
