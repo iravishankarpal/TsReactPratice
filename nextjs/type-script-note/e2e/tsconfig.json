@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",       // Node.js supports CommonJS modules
+      "target": "ES2020",         // Or ESNext if you prefer
+      "moduleResolution": "node", // Proper resolution of modules
+      "esModuleInterop": true,    // Helps with importing CommonJS modules
+      "skipLibCheck": true,       // Skips type checks for dependencies
+      "strict": true              // Enable strict type checking
+    }
+  }
+  
