@@ -1,0 +1,15 @@
+{
+    "printWidth": 100,
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "jsxSingleQuote": false,
+    "endOfLine": "lf",
+    "semi": false,
+    "tabWidth": 4,
+    "jsxBracketSameLine": false,
+    "singleAttributePerLine": false,
+    "parser": "typescript",
+    "useTabs": false
+}

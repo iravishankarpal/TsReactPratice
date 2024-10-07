@@ -1,23 +1,27 @@
-export type UserType = {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  address: {
-    street: string;
-    suite: string;
-    city: string;
-    zipcode: string;
-    geo: {
-      lat: string;
-      lng: string;
-    };
-  };
-  phone: string;
-  website: string;
-  company: {
-    name: string;
-    catchPhrase: string;
-    bs: string;
-  };
-};
+import { z } from "zod";
+
+export const userSchema = z.object({
+    id: z.number(),
+    name: z.string(),
+    username: z.string(),
+    email: z.string().email(),
+    address: z.object({
+        street: z.string(),
+        suite: z.string(),
+        city: z.string(),
+        zipcode: z.string(),
+        geo: z.object({
+            lat: z.string(),
+            lng: z.string(),
+        }),
+    }),
+    phone: z.string(),
+    website: z.string(),
+    company: z.object({
+        name: z.string(),
+        catchPhrase: z.string(),
+        bs: z.string(),
+    }),
+});
+
+export type UserType = z.infer<typeof userSchema>;
