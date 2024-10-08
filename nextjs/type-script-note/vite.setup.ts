@@ -1,1 +1,1 @@
-import "@testing-library/jest-dom"; // Add this line
+import "@testing-library/jest-dom" // Add this line

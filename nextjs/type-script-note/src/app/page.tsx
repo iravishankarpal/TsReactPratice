@@ -10,7 +10,9 @@ export default function Home() {
     useEffect(() => {
         const fetchData = async () => {
             await delay(2000)
-            const user_list: UserType[] = await apiCall.get("users").then(res => res.data)
+            const user_list: UserType[] = await apiCall
+                .get("users")
+                .then(res => res.data)
             setUser_list(user_list)
         }
         fetchData()

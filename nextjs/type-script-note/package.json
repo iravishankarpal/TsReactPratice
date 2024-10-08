@@ -8,7 +8,9 @@
         "start": "next start",
         "lint": "next lint",
         "test": "vitest",
-        "serve": " npx serve out"
+        "serve": " npx serve out",
+        "cucumber": "cucumber-js",
+        "formate": "prettier --write '**/*.{js,jsx,ts,tsx}'"
     },
     "dependencies": {
         "@hookform/resolvers": "^3.9.0",

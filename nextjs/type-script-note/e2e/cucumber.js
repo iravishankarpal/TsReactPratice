@@ -1,3 +1,4 @@
 module.exports = {
-    default: '--require-module ts-node/register --require features/**/*.steps.ts --format progress'
-};
+    default:
+        "--require-module ts-node/register --require features/**/*.steps.ts --format progress",
+}

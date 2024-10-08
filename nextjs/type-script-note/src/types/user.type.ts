@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod"
 
 export const userSchema = z.object({
     id: z.number(),
@@ -22,6 +22,6 @@ export const userSchema = z.object({
         catchPhrase: z.string(),
         bs: z.string(),
     }),
-});
+})
 
-export type UserType = z.infer<typeof userSchema>;
+export type UserType = z.infer<typeof userSchema>
